@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var timestamp = require('./timestamp');
 var app = express();
+var cors = require('cors');
 
 app.set('port', process.env.PORT || 8000);
 app.set('views', path.join(__dirname, 'views'));
@@ -24,7 +25,7 @@ app.get('/', function(req, res) {
     res.render('index', data);
 });
 
-app.get('/:date', function(req, res) {
+app.get('/:date', cors(), function(req, res) {
     res.json(timestamp(req.params.date));
 });
 
