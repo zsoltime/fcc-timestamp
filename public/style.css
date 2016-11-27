@@ -1,8 +1,9 @@
 * {
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 body {
     background: ghostwhite;
+    box-sizing: border-box;
     color: #444;
     font-family: Lato, "Helvetica Neue", Arial, sans-serif;
     font-weight: 300;
@@ -80,9 +81,29 @@ code::-webkit-scrollbar-thumb {
     font-size: 0.625em;
     margin: 0;
 }
+.live .example {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.live h3 {
+    width: 100%;
+}
+input, textarea {
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    color: #444;
+    font-family: Lato, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 1em;
+    padding: 1em;
+    width: 100%
+}
 @media (min-width: 640px) {
-    .usage {
+    .usage, .live {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
     .example {

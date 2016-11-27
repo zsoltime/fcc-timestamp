@@ -3,10 +3,7 @@ block content
     .container
         h1 Free Code Camp
         h2.subheading Timestamp Microservice
-        p
-            | Timestamp Microservice is a full stack JavaScript app built for&nbsp;
-            a(href="https://www.freecodecamp.com/challenges/timestamp-microservice") Free Code Camp
-            | .
+        p Timestamp Microservice is a full stack JavaScript app built for #[a(href='https://www.freecodecamp.com/challenges/timestamp-microservice', target='_blank') Free Code Camp].
         blockquote
             p User stories:
             ul
@@ -23,5 +20,14 @@ block content
                 h3 Example output
                 pre
                     code= output
+        .live
+            h3 You can even try it live below
+            .example
+                input#date(placeholder='Start typing...')
+            .example
+                textarea#output(placeholder='Result will be displayed here...', rows=4)
+        p The example above uses <em>fetch()</em> to get the results via AJAX. It works only in Edge 14+, FireFox 39+, Chrome 40+; no Safari or IE is supported. If you use any of the last two, chances are it won't work for you...
+        p The GitHub repo is available here: #[a(href='https://github.com/zsoltime/timestamp', target='_blank') Timestamp Microservice]
     .credit
-        p Created by Zsolt Meszaros
+        p Created by #[a(href='https://github.com/zsoltime') Zsolt Meszaros]
+    script(src='app.js')
