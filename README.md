@@ -1,5 +1,7 @@
 # FreeCodeCamp: Timestamp Microservice
 
+This is my entry for [Free Code Camp's first API project](https://www.freecodecamp.com/challenges/timestamp-microservice). Demo is available on [Heroku](http://fcc-api-ts.herokuapp.com/).
+
 ## User Stories
 
 - [x] I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)
