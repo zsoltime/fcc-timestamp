@@ -2,8 +2,8 @@
 
 const express = require('express');
 const path = require('path');
-const timestamp = require('./timestamp');
 const cors = require('cors');
+const timestamp = require('./timestamp');
 
 const app = express();
 
